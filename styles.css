@@ -1,0 +1,309 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.page {
+  background-color: #A3C5F3;
+  min-height: 100vh;
+  padding: 75px 150px;
+  font-size: 20px;
+}
+.main {
+  background-color: #fff;
+  width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0px black;
+}
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 45px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.top-left {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.weather {
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+.weather-main {
+  margin-left: 0;
+  font-size: 45px;
+}
+.weather-icon {
+  font-size: 35px;
+}
+.weather-main .weather-icon {
+  font-size: 45px;
+}
+.weather-day {
+  margin: 12px 0;
+}
+.time {
+  margin-left: 35px;
+}
+.date {
+  text-align: right;
+}
+.hour {
+  font-size: 60px;
+}
+.box1 {
+  padding: 30px 123px;
+}
+.ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 25px;
+}
+.link:hover {
+  color: #000;
+}
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.right {
+  padding: 0px 50px;
+  padding-top: 50px;
+}
+.box-img1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/video-local-programming.jpg);
+  width: 180px;
+  height: 95px;
+  position: absolute;
+  display: flex;
+  background-position: center;
+  box-shadow: 0 5px 20px 0 black;
+  background-size: cover;
+}
+.b9 {
+  position: absolute;
+  z-index: 7;
+  transform: translate(15px, 110px);
+}
+.imgb2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/video-family-guy.jpg);
+  background-position: center;
+}
+.imgb3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/video-simpsons.jpg);
+  background-position: center;
+  transform: scale(1.2);
+  z-index: 4;
+}
+.imgb4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/video-futurama.jpg);
+  background-position: center;
+}
+.imgb5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/video-american-dad.jpg);
+  background-position: center;
+}
+.b5 {
+  position: absolute;
+  z-index: 7;
+  transform: translate(0, 100px);
+}
+.-b3 {
+  transform: scale(1.3);
+  position: absolute;
+  z-index: 7;
+}
+.kino {
+  position: absolute;
+  z-index: 7;
+  transform: translate(15px, 110px);
+}
+.left {
+  display: flex;
+}
+.img-box {
+  text-align: center;
+  position: relative;
+  width: 168px;
+}
+.dev {
+  font-size: 15px;
+  color: #c5c5c5;
+  padding-top: 15px;
+}
+.p-text {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 18px;
+}
+.img-box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #B4CCF4;
+  bottom: 0;
+  left: 0;
+  transform: translate(0px, 103px);
+  opacity: 0;
+  display: none;
+}
+.img-box:hover::before {
+  opacity: 1;
+  display: block;
+}
+.i {
+  font-size: 35px;
+  color: #b7cbe3;
+}
+.left1 {
+  padding: 0px 50px;
+}
+.box3 {
+  display: flex;
+  justify-content: space-between;
+}
+.dew1 {
+  width: 250px;
+  height: 2px;
+  background-color: #dedede;
+  position: relative;
+}
+.bottom-m {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dew1::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #000;
+}
+.dew1::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-160px, -5px);
+  right: 0;
+  background-color: #000;
+}
+.img-m {
+  width: 95px;
+  padding-right: 20px;
+}
+.icon {
+  font-size: 35px;
+  color: #b7cbe3;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+.nom {
+  font-size: 15px;
+  font-weight: bold;
+}
+.top-m {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.akt {
+  font-size: 13px;
+  padding-top: 8px;
+  color: #aaa;
+}
+.medium1 {
+  padding: 50px 0;
+}
+.soat1 {
+  padding-right: 30px;
+  font-size: 17px;
+  color: #aaa;
+}
+.soat2 {
+  padding-left: 20px;
+  font-size: 17px;
+  color: #aaa;
+}
+.box-r {
+  width: 350px;
+  height: 50px;
+  position: static;
+}
+.img-r {
+  width: 95px;
+  height: 100px;
+  display: flex;
+  box-shadow: 0 5px 20px 0 black;
+  background-size: cover;
+  background-position: center;
+}
+.img-r1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/music-with-you.jpg);
+  transform: scale(1.2);
+}
+.img-r2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/music-butter.jpg);
+}
+.img-r3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/music-back-together.jpg);
+}
+.img-r4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/music-unwind.jpg);
+}
+.right1 {
+  display: flex;
+  width: 360px;
+  padding: 35px 0;
+  margin-left: 30px;
+}
+.bet {
+  font-size: 17px;
+  margin-top: 20px;
+  text-align: center;
+}
+@media (min-width: 1120px) {
+  .page {
+    padding: 0 0;
+  }
+}
